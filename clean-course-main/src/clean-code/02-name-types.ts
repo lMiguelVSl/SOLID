@@ -20,11 +20,11 @@
         throw new Error('Function not implemented.');
     }
 
-    function getBooksFromUrl( u: string) {
+    function getBooksFromUrl( url: string) {
         throw new Error('Function not implemented.');
     }
     
-    function getSquareArea( s: number ) {
+    function getSquareArea( side: number ) {
         throw new Error('Function not implemented.');
     }
 
