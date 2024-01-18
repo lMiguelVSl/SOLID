@@ -12,18 +12,28 @@
         console.log({ ActorId });
     }
     
-    function createMovie(title: string, description: string, rating: number, cast: string[] ) {
+    interface Movie {
+        title: string; 
+        description: string; 
+        rating: number; 
+        cast: string[];
+    }
+
+    function createMovie( { title, description, rating, cast } : Movie) {
         console.log({ title, description, rating, cast });
+    }
+
+    function checkName( fullName: string): boolean {
+        return fullName != '';
     }
 
     function createActor( fullName: string, birthdate: Date ): boolean {
         
-        // tarea asincrona para verificar nombre
-        // ..
-        // ..
+        checkName(fullName);
+
         if ( fullName === 'fernando' ) return false;
 
-        console.log('Crear actor');
+        console.log('Crear actor', birthdate);
         return true;        
 
     }
